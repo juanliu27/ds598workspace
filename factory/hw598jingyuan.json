@@ -1,0 +1,9 @@
+{
+	"name": "hw598jingyuan",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "76d91d0d-e64c-487f-8a38-e47fca739015",
+		"tenantId": "d57d32cc-c121-488f-b07b-dfe705680c71"
+	}
+}
