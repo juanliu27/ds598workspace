@@ -128,11 +128,11 @@
 						"type": "string",
 						"defaultValue": "71.0565"
 					},
-					"start": {
+					"end": {
 						"type": "string",
 						"defaultValue": "1738216800"
 					},
-					"end": {
+					"start": {
 						"type": "string",
 						"defaultValue": "1706594400"
 					},
@@ -205,8 +205,8 @@
 								"parameters": {
 									"lat": "42.3555",
 									"lon": "71.0565",
-									"start": "1738216800",
-									"end": "1706594400",
+									"end": "1738216800",
+									"start": "1706594400",
 									"appid": "85d5d295e6b5d280fb5e91fa360ea631"
 								}
 							}
