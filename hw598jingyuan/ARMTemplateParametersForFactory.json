@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "hw598jingyuan"
+		},
+		"GitHub connection_credential": {
+			"value": ""
+		},
+		"AzureBlobStorage_AirPollutionData_connectionString": {
+			"value": ""
+		},
+		"HttpServerAirP_password": {
+			"value": ""
+		},
+		"GitHub connection_properties_typeProperties_username": {
+			"value": "jingyuan"
+		},
+		"HttpServerAirP_properties_typeProperties_url": {
+			"value": "http://api.openweathermap.org/"
+		},
+		"HttpServerAirP_properties_typeProperties_userName": {
+			"value": "jingyuan"
+		}
+	}
+}
