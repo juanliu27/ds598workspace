@@ -14,11 +14,11 @@
 				"type": "string",
 				"defaultValue": "71.0565"
 			},
-			"start": {
+			"end": {
 				"type": "string",
 				"defaultValue": "1738216800"
 			},
-			"end": {
+			"start": {
 				"type": "string",
 				"defaultValue": "1706594400"
 			},
@@ -32,7 +32,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "data/2.5/air_pollution/history?lat=@{dataset().lat}&lon=@{dataset().lon}&start=@{dataset().start}&end=@{dataset().end}&appid=@{dataset().appid}"
+				"relativeUrl": {
+					"value": "data/2.5/air_pollution/history?lat=@{dataset().lat}&lon=@{dataset().lon}&start=@{dataset().start}&end=@{dataset().end}&appid=@{dataset().appid}",
+					"type": "Expression"
+				}
 			}
 		},
 		"schema": {}
