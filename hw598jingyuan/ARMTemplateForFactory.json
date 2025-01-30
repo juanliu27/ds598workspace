@@ -81,8 +81,11 @@
 								"referenceName": "airpollutionsource",
 								"type": "DatasetReference",
 								"parameters": {
-									"lon": "71.0565° W",
-									"end": "1706594400"
+									"lat": "42.3555",
+									"lon": "71.0565",
+									"start": "1738216800",
+									"end": "1706594400",
+									"appid": "85d5d295e6b5d280fb5e91fa360ea631"
 								}
 							}
 						],
