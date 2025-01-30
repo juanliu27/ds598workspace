@@ -7,13 +7,13 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "hw598jingyuan"
 		},
-		"GitHub connection_credential": {
-			"type": "secureString",
-			"metadata": "Secure string for 'credential' of 'GitHub connection'"
-		},
 		"AzureBlobStorage_AirPollutionData_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage_AirPollutionData'"
+		},
+		"GitHub connection_credential": {
+			"type": "secureString",
+			"metadata": "Secure string for 'credential' of 'GitHub connection'"
 		},
 		"HttpServerAirP_password": {
 			"type": "secureString",
@@ -58,11 +58,11 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"GitHub connection_credential": {
-						"value": "[parameters('GitHub connection_credential')]"
-					},
 					"AzureBlobStorage_AirPollutionData_connectionString": {
 						"value": "[parameters('AzureBlobStorage_AirPollutionData_connectionString')]"
+					},
+					"GitHub connection_credential": {
+						"value": "[parameters('GitHub connection_credential')]"
 					},
 					"HttpServerAirP_password": {
 						"value": "[parameters('HttpServerAirP_password')]"

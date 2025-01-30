@@ -5,10 +5,10 @@
 		"factoryName": {
 			"value": "hw598jingyuan"
 		},
-		"GitHub connection_credential": {
+		"AzureBlobStorage_AirPollutionData_connectionString": {
 			"value": ""
 		},
-		"AzureBlobStorage_AirPollutionData_connectionString": {
+		"GitHub connection_credential": {
 			"value": ""
 		},
 		"HttpServerAirP_password": {
