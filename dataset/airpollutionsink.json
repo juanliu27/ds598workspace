@@ -1,0 +1,17 @@
+{
+	"name": "airpollutionsink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage_AirPollutionData",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation"
+			}
+		},
+		"schema": {}
+	}
+}
