@@ -1,8 +1,8 @@
 {
-	"name": "airpollutionsinkbronze",
+	"name": "hisweathersink",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureBlobStorage_AirPollutionData",
+			"referenceName": "AzureBlobStorageHisweather",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
@@ -10,7 +10,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"folderPath": "air/airpollution/bronze",
 				"container": "hwcontainer"
 			}
 		},

@@ -37,6 +37,16 @@
 										"type": "JsonReadSettings"
 									}
 								},
+								"sink": {
+									"type": "JsonSink",
+									"storeSettings": {
+										"type": "AzureBlobStorageWriteSettings",
+										"copyBehavior": "FlattenHierarchy"
+									},
+									"formatSettings": {
+										"type": "JsonWriteSettings"
+									}
+								},
 								"enableStaging": false
 							},
 							"inputs": [
@@ -51,6 +61,12 @@
 										"start": "div(sub(ticks(addDays(utcNow(), -7 * item())) , ticks('1970-01-01T00:00:00Z')), 10000000)",
 										"dataType": "hourly"
 									}
+								}
+							],
+							"outputs": [
+								{
+									"referenceName": "hisweathersink",
+									"type": "DatasetReference"
 								}
 							]
 						}
