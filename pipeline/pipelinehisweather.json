@@ -1,0 +1,27 @@
+{
+	"name": "pipelinehisweather",
+	"properties": {
+		"activities": [
+			{
+				"name": "ForEachGetHis",
+				"type": "ForEach",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "weeksAgo",
+						"type": "Expression"
+					},
+					"isSequential": true
+				}
+			}
+		],
+		"parameters": {
+			"weeksAgo": {
+				"type": "int",
+				"defaultValue": 52
+			}
+		},
+		"annotations": []
+	}
+}
