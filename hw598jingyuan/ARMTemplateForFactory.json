@@ -381,10 +381,6 @@
 						"type": "string",
 						"defaultValue": "42.3555"
 					},
-					"appid": {
-						"type": "string",
-						"defaultValue": "85d5d295e6b5d280fb5e91fa360ea631"
-					},
 					"end": {
 						"type": "string",
 						"defaultValue": "div(sub(ticks(addDays(utcNow(), -7 * item() + 6)), ticks('1970-01-01T00:00:00Z')), 10000000)"
@@ -396,6 +392,10 @@
 					"dataType": {
 						"type": "String",
 						"defaultValue": "hourly"
+					},
+					"appid": {
+						"type": "string",
+						"defaultValue": "85d5d295e6b5d280fb5e91fa360ea631"
 					}
 				},
 				"annotations": [],
