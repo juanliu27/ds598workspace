@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"folderPath": "data/airpollution/silver",
+				"folderPath": "air_pollution/silver",
 				"container": "hwcontainer"
 			}
 		},
