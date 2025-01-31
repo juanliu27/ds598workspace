@@ -150,7 +150,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobStorageLocation",
-						"folderPath": "air/airpollution/bronze",
+						"folderPath": "air_pollution/bronze",
 						"container": "hwcontainer"
 					}
 				},
@@ -174,7 +174,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobStorageLocation",
-						"folderPath": "air/airpollution/gold",
+						"folderPath": "air_pollution/gold",
 						"container": "hwcontainer"
 					}
 				},
@@ -198,7 +198,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobStorageLocation",
-						"folderPath": "data/airpollution/silver",
+						"folderPath": "air_pollution/silver",
 						"container": "hwcontainer"
 					}
 				},
@@ -257,6 +257,29 @@
 			]
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/hisweathersink')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "AzureBlobStorageHisweather",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "Json",
+				"typeProperties": {
+					"location": {
+						"type": "AzureBlobStorageLocation",
+						"container": "hwcontainer"
+					}
+				},
+				"schema": {}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/AzureBlobStorageHisweather')]"
+			]
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/hisweathersource')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
@@ -306,29 +329,6 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/linkedServices/HttpServerHisW')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/hisweathersink')]",
-			"type": "Microsoft.DataFactory/factories/datasets",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"linkedServiceName": {
-					"referenceName": "AzureBlobStorageHisweather",
-					"type": "LinkedServiceReference"
-				},
-				"annotations": [],
-				"type": "Json",
-				"typeProperties": {
-					"location": {
-						"type": "AzureBlobStorageLocation",
-						"container": "hwcontainer"
-					}
-				},
-				"schema": {}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/AzureBlobStorageHisweather')]"
 			]
 		},
 		{
