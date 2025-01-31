@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "hw598jingyuan"
 		},
+		"AzureBlobStorageHisweather_connectionString": {
+			"value": ""
+		},
 		"AzureBlobStorage_AirPollutionData_connectionString": {
 			"value": ""
 		},
@@ -14,6 +17,9 @@
 		"HttpServerAirP_password": {
 			"value": ""
 		},
+		"HttpServerHisW_password": {
+			"value": ""
+		},
 		"GitHub connection_properties_typeProperties_username": {
 			"value": "jingyuan"
 		},
@@ -21,6 +27,12 @@
 			"value": "http://api.openweathermap.org/"
 		},
 		"HttpServerAirP_properties_typeProperties_userName": {
+			"value": "jingyuan"
+		},
+		"HttpServerHisW_properties_typeProperties_url": {
+			"value": "http://api.openweathermap.org/"
+		},
+		"HttpServerHisW_properties_typeProperties_userName": {
 			"value": "jingyuan"
 		}
 	}

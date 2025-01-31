@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "hw598jingyuan"
 		},
+		"AzureBlobStorageHisweather_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorageHisweather'"
+		},
 		"AzureBlobStorage_AirPollutionData_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage_AirPollutionData'"
@@ -19,6 +23,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'HttpServerAirP'"
 		},
+		"HttpServerHisW_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'HttpServerHisW'"
+		},
 		"GitHub connection_properties_typeProperties_username": {
 			"type": "string",
 			"defaultValue": "jingyuan"
@@ -28,6 +36,14 @@
 			"defaultValue": "http://api.openweathermap.org/"
 		},
 		"HttpServerAirP_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "jingyuan"
+		},
+		"HttpServerHisW_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "http://api.openweathermap.org/"
+		},
+		"HttpServerHisW_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "jingyuan"
 		},
@@ -58,6 +74,9 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"AzureBlobStorageHisweather_connectionString": {
+						"value": "[parameters('AzureBlobStorageHisweather_connectionString')]"
+					},
 					"AzureBlobStorage_AirPollutionData_connectionString": {
 						"value": "[parameters('AzureBlobStorage_AirPollutionData_connectionString')]"
 					},
@@ -67,6 +86,9 @@
 					"HttpServerAirP_password": {
 						"value": "[parameters('HttpServerAirP_password')]"
 					},
+					"HttpServerHisW_password": {
+						"value": "[parameters('HttpServerHisW_password')]"
+					},
 					"GitHub connection_properties_typeProperties_username": {
 						"value": "[parameters('GitHub connection_properties_typeProperties_username')]"
 					},
@@ -75,6 +97,12 @@
 					},
 					"HttpServerAirP_properties_typeProperties_userName": {
 						"value": "[parameters('HttpServerAirP_properties_typeProperties_userName')]"
+					},
+					"HttpServerHisW_properties_typeProperties_url": {
+						"value": "[parameters('HttpServerHisW_properties_typeProperties_url')]"
+					},
+					"HttpServerHisW_properties_typeProperties_userName": {
+						"value": "[parameters('HttpServerHisW_properties_typeProperties_userName')]"
 					}
 				}
 			},
