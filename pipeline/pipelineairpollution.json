@@ -25,6 +25,15 @@
 							"type": "JsonReadSettings"
 						}
 					},
+					"sink": {
+						"type": "JsonSink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings"
+						},
+						"formatSettings": {
+							"type": "JsonWriteSettings"
+						}
+					},
 					"enableStaging": false
 				},
 				"inputs": [
@@ -38,6 +47,12 @@
 							"start": "1706594400",
 							"appid": "85d5d295e6b5d280fb5e91fa360ea631"
 						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "airpollutionsinkbronze",
+						"type": "DatasetReference"
 					}
 				]
 			}
