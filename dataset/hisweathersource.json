@@ -25,6 +25,10 @@
 			"start": {
 				"type": "string",
 				"defaultValue": "div(sub(ticks(addDays(utcNow(), -7 * item())) , ticks('1970-01-01T00:00:00Z')), 10000000)"
+			},
+			"dataType": {
+				"type": "String",
+				"defaultValue": "hourly"
 			}
 		},
 		"annotations": [],
@@ -32,7 +36,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "data/2.5/history/city?lat=@{dataset().lat}&lon=@{dataset().lon}&type=@{dataset().dataType}&start=@{dataset().start}&end=@{dataset().end}&appid=@{dataset().appid}"
+				"relativeUrl": {
+					"value": "data/2.5/history/city?lat=@{dataset().lat}&lon=@{dataset().lon}&type=@{dataset().dataType}&start=@{dataset().start}&end=@{dataset().end}&appid=@{dataset().appid}",
+					"type": "Expression"
+				}
 			}
 		},
 		"schema": {}

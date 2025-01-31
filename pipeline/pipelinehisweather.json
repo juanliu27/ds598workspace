@@ -9,7 +9,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "weeksAgo",
+						"value": "@range(0, add(parameters('weeksAgo'), 1))\n",
 						"type": "Expression"
 					},
 					"isSequential": true,
@@ -48,7 +48,8 @@
 										"lat": "42.3555",
 										"appid": "85d5d295e6b5d280fb5e91fa360ea631",
 										"end": "div(sub(ticks(addDays(utcNow(), -7 * item() + 6)), ticks('1970-01-01T00:00:00Z')), 10000000)",
-										"start": "div(sub(ticks(addDays(utcNow(), -7 * item())) , ticks('1970-01-01T00:00:00Z')), 10000000)"
+										"start": "div(sub(ticks(addDays(utcNow(), -7 * item())) , ticks('1970-01-01T00:00:00Z')), 10000000)",
+										"dataType": "hourly"
 									}
 								}
 							]
