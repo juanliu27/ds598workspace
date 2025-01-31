@@ -270,6 +270,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobStorageLocation",
+						"folderPath": "hisweather",
 						"container": "hwcontainer"
 					}
 				},
@@ -416,7 +417,7 @@
 						"userProperties": [],
 						"typeProperties": {
 							"items": {
-								"value": "@range(0, add(parameters('weeksAgo'), 1))\n",
+								"value": "@range(0, add(pipeline().parameters.weeksAgo, 1))\n",
 								"type": "Expression"
 							},
 							"isSequential": true,
