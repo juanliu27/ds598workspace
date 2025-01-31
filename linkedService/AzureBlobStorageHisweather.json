@@ -1,0 +1,12 @@
+{
+	"name": "AzureBlobStorageHisweather",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": "DefaultEndpointsProtocol=https;AccountName=598hwstorage;EndpointSuffix=core.windows.net;",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDE3NkNEREZBLTVCRkUtNEQ0OS05QTZGLTE4ODEwQUFGODc4Ml9jOTY4MGQ1Yi1mZDAwLTQ3NGYtODQyZi0xYWM5ZjU1ZTBhYjAiDQp9"
+		}
+	}
+}
