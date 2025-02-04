@@ -42,7 +42,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"lat": "42.3555",
-							"lon": "71.0565",
+							"lon": "-71.0565",
 							"end": "1738216800",
 							"start": "1706594400",
 							"appid": "85d5d295e6b5d280fb5e91fa360ea631"
