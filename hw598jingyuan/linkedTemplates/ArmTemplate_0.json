@@ -378,7 +378,7 @@
 								"type": "DatasetReference",
 								"parameters": {
 									"lat": "42.3555",
-									"lon": "71.0565",
+									"lon": "-71.0565",
 									"end": "1738216800",
 									"start": "1706594400",
 									"appid": "85d5d295e6b5d280fb5e91fa360ea631"
@@ -462,12 +462,12 @@
 											"referenceName": "hisweathersource",
 											"type": "DatasetReference",
 											"parameters": {
-												"lon": "71.0565",
+												"lon": "-71.0565",
 												"lat": "42.3555",
-												"appid": "85d5d295e6b5d280fb5e91fa360ea631",
 												"end": "div(sub(ticks(addDays(utcNow(), -7 * item() + 6)), ticks('1970-01-01T00:00:00Z')), 10000000)",
 												"start": "div(sub(ticks(addDays(utcNow(), -7 * item())) , ticks('1970-01-01T00:00:00Z')), 10000000)",
-												"dataType": "hourly"
+												"dataType": "hourly",
+												"appid": "85d5d295e6b5d280fb5e91fa360ea631"
 											}
 										}
 									],
