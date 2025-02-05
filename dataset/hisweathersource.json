@@ -8,7 +8,7 @@
 		"parameters": {
 			"lon": {
 				"type": "string",
-				"defaultValue": "71.0565"
+				"defaultValue": "-71.0565"
 			},
 			"lat": {
 				"type": "string",
