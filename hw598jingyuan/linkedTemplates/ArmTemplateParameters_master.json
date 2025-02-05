@@ -30,7 +30,7 @@
 			"value": "jingyuan"
 		},
 		"HttpServerHisW_properties_typeProperties_url": {
-			"value": "http://api.openweathermap.org/"
+			"value": "pro.openweathermap.org"
 		},
 		"HttpServerHisW_properties_typeProperties_userName": {
 			"value": "jingyuan"
