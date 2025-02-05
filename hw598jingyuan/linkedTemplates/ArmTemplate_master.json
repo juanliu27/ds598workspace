@@ -41,7 +41,7 @@
 		},
 		"HttpServerHisW_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "pro.openweathermap.org"
+			"defaultValue": "https://pro.openweathermap.org"
 		},
 		"HttpServerHisW_properties_typeProperties_userName": {
 			"type": "string",

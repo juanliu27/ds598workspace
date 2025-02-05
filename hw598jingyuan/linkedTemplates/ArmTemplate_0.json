@@ -41,7 +41,7 @@
 		},
 		"HttpServerHisW_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "pro.openweathermap.org"
+			"defaultValue": "https://pro.openweathermap.org"
 		},
 		"HttpServerHisW_properties_typeProperties_userName": {
 			"type": "string",
@@ -292,7 +292,7 @@
 				"parameters": {
 					"lon": {
 						"type": "string",
-						"defaultValue": "71.0565"
+						"defaultValue": "-71.0565"
 					},
 					"lat": {
 						"type": "string",
