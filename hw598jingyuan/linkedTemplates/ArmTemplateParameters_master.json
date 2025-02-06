@@ -30,7 +30,7 @@
 			"value": "jingyuan"
 		},
 		"HttpServerHisW_properties_typeProperties_url": {
-			"value": "https://history.openweathermap.org"
+			"value": "https://pro.openweathermap.org"
 		},
 		"HttpServerHisW_properties_typeProperties_userName": {
 			"value": "jingyuan"
