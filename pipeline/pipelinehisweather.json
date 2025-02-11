@@ -9,7 +9,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@range(0, pipeline().parameters.weeksAgo)\n",
+						"value": "@range(0, pipeline().parameters.weeksAgo)",
 						"type": "Expression"
 					},
 					"isSequential": true,
