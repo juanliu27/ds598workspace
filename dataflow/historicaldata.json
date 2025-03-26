@@ -52,7 +52,7 @@
 				"     ignoreNoFilesFound: false,",
 				"     documentForm: 'documentPerLine',",
 				"     wildcardPaths:['hisweather/*']) ~> HistoricalWeather",
-				"HistoricalWeather foldDown(unroll(),",
+				"HistoricalWeather foldDown(unroll(, list),",
 				"     mapColumn(",
 				"          list = list.dt,",
 				"          calctime,",
