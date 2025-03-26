@@ -100,8 +100,10 @@
 				"     skipDuplicateMapOutputs: true) ~> DeleteTime",
 				"DeleteTime sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
+				"     partitionFileNames:['air_pollution_silver.parquet'],",
 				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> SinkSilver"
+				"     skipDuplicateMapOutputs: true,",
+				"     partitionBy('hash', 1)) ~> SinkSilver"
 			]
 		}
 	}
