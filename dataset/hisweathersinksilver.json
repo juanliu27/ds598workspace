@@ -1,0 +1,19 @@
+{
+	"name": "hisweathersinksilver",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorageHisweather",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "hisweather/silver",
+				"container": "hwcontainer"
+			}
+		},
+		"schema": {}
+	}
+}
