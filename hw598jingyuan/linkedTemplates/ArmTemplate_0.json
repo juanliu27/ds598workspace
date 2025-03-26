@@ -150,6 +150,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobStorageLocation",
+						"folderPath": "air_pollution/bronze",
 						"container": "hwcontainer"
 					}
 				},
@@ -731,7 +732,7 @@
 						"     validateSchema: false,",
 						"     ignoreNoFilesFound: false,",
 						"     documentForm: 'documentPerLine',",
-						"     wildcardPaths:['hwcontainer/air_pollution/bronze/data/2.5/air_pollution/*.json']) ~> AirPollutionSourceBronze",
+						"     wildcardPaths:['hwcontainer/air_pollution/bronze/*.json']) ~> AirPollutionSourceBronze",
 						"AirPollutionSourceBronze foldDown(unroll(list),",
 						"     mapColumn(",
 						"          lon = coord.lon,",
