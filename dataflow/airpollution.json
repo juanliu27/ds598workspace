@@ -50,8 +50,6 @@
 				"     wildcardPaths:['hwcontainer/air_pollution/bronze/*.json']) ~> AirPollutionSourceBronze",
 				"AirPollutionSourceBronze foldDown(unroll(list),",
 				"     mapColumn(",
-				"          coord,",
-				"          list = list.main.aqi,",
 				"          lon = coord.lon,",
 				"          lat = coord.lat,",
 				"          aqi = list.main.aqi,",
