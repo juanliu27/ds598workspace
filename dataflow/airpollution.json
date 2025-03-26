@@ -9,13 +9,16 @@
 						"referenceName": "hisweathersink",
 						"type": "DatasetReference"
 					},
-					"name": "airpollutiondata"
+					"name": "HistoricalWeather"
 				}
 			],
 			"sinks": [],
 			"transformations": [
 				{
 					"name": "flatten1"
+				},
+				{
+					"name": "DerivedTimestampLocation"
 				}
 			],
 			"scriptLines": [
@@ -31,14 +34,36 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false,",
 				"     documentForm: 'documentPerLine',",
-				"     wildcardPaths:['hwcontainer/hisweather/*.json']) ~> airpollutiondata",
-				"airpollutiondata foldDown(unroll(),",
+				"     wildcardPaths:['hwcontainer/hisweather/*.json']) ~> HistoricalWeather",
+				"HistoricalWeather foldDown(unroll(),",
 				"     mapColumn(",
 				"          coord,",
-				"          list",
+				"          list,",
+				"          calctime,",
+				"          city_id,",
+				"          cnt,",
+				"          cod,",
+				"          message,",
+				"          timestamp = list.dt,",
+				"          clouds_all = list.clouds.all,",
+				"          feels_like = list.main.feels_like,",
+				"          humidity = list.main.humidity,",
+				"          pressure = list.main.pressure,",
+				"          temp = list.main.temp,",
+				"          temp_min = list.main.temp_min,",
+				"          temp_max = list.main.temp_max,",
+				"          weather_description = list.weather.description,",
+				"          weather_icon = list.weather.icon,",
+				"          weather_id = list.weather.id,",
+				"          weather_main = list.weather.main,",
+				"          wind_deg = list.wind.deg,",
+				"          wind_gust = list.wind.gust,",
+				"          wind_speed = list.wind.speed",
 				"     ),",
 				"     skipDuplicateMapInputs: false,",
-				"     skipDuplicateMapOutputs: false) ~> flatten1"
+				"     skipDuplicateMapOutputs: false) ~> flatten1",
+				"flatten1 derive(corrected_timestamp = iif(length(toString(timestamp)) > 10, 0, timestamp),",
+				"          location = 'Boston') ~> DerivedTimestampLocation"
 			]
 		}
 	}
