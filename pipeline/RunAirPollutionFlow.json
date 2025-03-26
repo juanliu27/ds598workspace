@@ -1,5 +1,5 @@
 {
-	"name": "runairflow",
+	"name": "RunAirPollutionFlow",
 	"properties": {
 		"activities": [
 			{
