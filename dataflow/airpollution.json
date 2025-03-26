@@ -23,7 +23,7 @@
 			],
 			"transformations": [
 				{
-					"name": "Flatte"
+					"name": "Flatten"
 				},
 				{
 					"name": "derivedColumn1"
@@ -61,11 +61,13 @@
 				"          pm10 = list.components.pm10,",
 				"          aqi = list.main.aqi,",
 				"          nh3 = list.components.nh3,",
-				"          timestamp = list.dt",
+				"          timestamp = list.dt,",
+				"          coord,",
+				"          list = list",
 				"     ),",
 				"     skipDuplicateMapInputs: false,",
-				"     skipDuplicateMapOutputs: false) ~> Flatte",
-				"Flatte derive(corrected_timestamp = iif(length(toString(timestamp)) == 10, toInteger(timestamp), toInteger(null())),",
+				"     skipDuplicateMapOutputs: false) ~> Flatten",
+				"Flatten derive(corrected_timestamp = iif(length(toString(timestamp)) == 10, toInteger(timestamp), toInteger(null())),",
 				"          location = 'Boston') ~> derivedColumn1",
 				"derivedColumn1 filter(!isNull(aqi) && !isNull(corrected_timestamp)) ~> Filter",
 				"Filter derive(date_time = toTimestamp(toLong(corrected_timestamp) * 1000),",
