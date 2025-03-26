@@ -52,7 +52,7 @@
 				"     ignoreNoFilesFound: false,",
 				"     documentForm: 'documentPerLine',",
 				"     wildcardPaths:['hwcontainer/hisweather/*.json']) ~> HistoricalWeather",
-				"HistoricalWeather foldDown(unroll(, list),",
+				"HistoricalWeather foldDown(unroll(),",
 				"     mapColumn(",
 				"          list,",
 				"          calctime,",
